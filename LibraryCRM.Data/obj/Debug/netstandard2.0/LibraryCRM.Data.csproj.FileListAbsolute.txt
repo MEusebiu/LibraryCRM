@@ -1,0 +1,6 @@
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\bin\Debug\netstandard2.0\LibraryCRM.Data.deps.json
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\bin\Debug\netstandard2.0\LibraryCRM.Data.dll
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\obj\Debug\netstandard2.0\LibraryCRM.Data.csprojAssemblyReference.cache
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\obj\Debug\netstandard2.0\LibraryCRM.Data.csproj.CoreCompileInputs.cache
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\obj\Debug\netstandard2.0\LibraryCRM.Data.AssemblyInfoInputs.cache
+C:\Users\P3700924\Desktop\personal stuff\LibraryCRM\LibraryCRM\LibraryCRM.Data\obj\Debug\netstandard2.0\LibraryCRM.Data.AssemblyInfo.cs
