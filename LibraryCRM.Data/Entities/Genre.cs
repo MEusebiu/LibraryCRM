@@ -4,9 +4,11 @@ using System.Text;
 
 namespace LibraryCRM.Data.Entities
 {
-    public class Genre //Lookup
+    public class Genre : Entity//Lookup 
     {
-        public int Id { get; set; }
         public string Name { get; set; }
+
+        public List<Author> Authors { get; set; }
+        public List<Book> Books { get; set; }
     }
 }

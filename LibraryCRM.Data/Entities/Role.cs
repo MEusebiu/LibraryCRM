@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LibraryCRM.Data.Entities
 {
-    public class Role //Lookup
+    public class Role : Entity//Lookup
     {
-        public int Id { get; set; }
         public string Name { get; set; }
     }
 }
