@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LibraryCRM.Data.Entities
 {
-    public class Genre : Entity//Lookup 
+    public class Genre : Entity //Lookup 
     {
         public string Name { get; set; }
 
