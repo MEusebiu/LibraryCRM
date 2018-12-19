@@ -8,7 +8,7 @@ namespace LibraryCRM.Data.DbContext
 {
     public class LibraryDbContext : System.Data.Entity.DbContext
     {
-        public LibraryDbContext() : base()
+        public LibraryDbContext() : base("name=UniLibraryDB")
         {
             
         }

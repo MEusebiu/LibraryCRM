@@ -36,6 +36,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "LibraryCRM.API/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LibraryCRM.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryCRM.API.dll": {}
+        }
       }
     }
   },
@@ -207,11 +216,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "LibraryCRM.API/1.0.0": {
+      "type": "project",
+      "path": "../LibraryCRM.API/LibraryCRM.API.csproj",
+      "msbuildProject": "../LibraryCRM.API/LibraryCRM.API.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "EntityFramework >= 6.0.0",
+      "LibraryCRM.API >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -222,11 +237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Eusebiu\\C#\\LibraryCRM\\LibraryCRM.Data\\LibraryCRM.Data.csproj",
+      "projectUniqueName": "D:\\Eusebiu\\C#\\UniLibrary\\LibraryCRM.Data\\LibraryCRM.Data.csproj",
       "projectName": "LibraryCRM.Data",
-      "projectPath": "D:\\Eusebiu\\C#\\LibraryCRM\\LibraryCRM.Data\\LibraryCRM.Data.csproj",
+      "projectPath": "D:\\Eusebiu\\C#\\UniLibrary\\LibraryCRM.Data\\LibraryCRM.Data.csproj",
       "packagesPath": "C:\\Users\\Eusebiu Duktech\\.nuget\\packages\\",
-      "outputPath": "D:\\Eusebiu\\C#\\LibraryCRM\\LibraryCRM.Data\\obj\\",
+      "outputPath": "D:\\Eusebiu\\C#\\UniLibrary\\LibraryCRM.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -244,7 +259,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Eusebiu\\C#\\UniLibrary\\LibraryCRM.API\\LibraryCRM.API.csproj": {
+              "projectPath": "D:\\Eusebiu\\C#\\UniLibrary\\LibraryCRM.API\\LibraryCRM.API.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

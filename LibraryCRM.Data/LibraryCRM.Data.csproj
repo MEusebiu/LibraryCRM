@@ -8,4 +8,8 @@
     <PackageReference Include="EntityFramework" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryCRM.API\LibraryCRM.API.csproj" />
+  </ItemGroup>
+
 </Project>
