@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LibraryCRM.API")]
+[assembly: AssemblyTitle("LibraryCRM.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LibraryCRM.API")]
+[assembly: AssemblyProduct("LibraryCRM.Web")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("047b7ec8-fcbc-4b2f-adec-f0d3d535d6d5")]
+[assembly: Guid("9f7bf9a1-f306-4a27-9618-a48434cc82ba")]
 
 // Version information for an assembly consists of the following four values:
 //
