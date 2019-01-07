@@ -7,28 +7,15 @@ using LibraryCRM.API.Models;
 
 namespace LibraryCRM.API.Controllers
 {
-    /// <summary>
-    /// Book Controller
-    /// </summary>
     public class BookController : ApiController
     {
-        
-        /// <summary>
-        /// Get All Books
-        /// </summary>
-        /// <returns></returns>
         [HttpGet]
-        public IHttpActionResult GetAll()
+        public IHttpActionResult GetAllBooks()
         {
             var books = PopulateWithBooksMock();
             return Ok(books);
         }
 
-        /// <summary>
-        /// Get Book By Id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         [HttpGet]
         public IHttpActionResult Get(int id)
         {
@@ -38,6 +25,7 @@ namespace LibraryCRM.API.Controllers
             }
             var books = PopulateWithBooksMock();
             var searchedBook = books.Where(x => x.Id == id);
+
             return searchedBook == null ? NotFound() : (IHttpActionResult)Ok(searchedBook);
         }
 
@@ -45,11 +33,12 @@ namespace LibraryCRM.API.Controllers
         {
             var bookListMock = new List<Book>
             {
-                new Book {Author = "Eusebiu1", Id = 1, Title = "C# LEARNING1", Year = new DateTime(2018, 01, 04)},
-                new Book {Author = "Eusebiu2", Id = 2, Title = "C# LEARNING2", Year = new DateTime(2018, 01, 05)},
-                new Book {Author = "Eusebiu3", Id = 3, Title = "C# LEARNING3", Year = new DateTime(2018, 01, 06)},
-                new Book {Author = "Eusebiu4", Id = 4, Title = "C# LEARNING4", Year = new DateTime(2018, 01, 07)}
+                new Book { Id = 1, Author = "Eusebiu1", Title = "C# LEARNING1", Year = new DateTime(2018, 01, 04) },
+                new Book { Id = 2, Author = "Eusebiu2", Title = "C# LEARNING2", Year = new DateTime(2018, 01, 05) },
+                new Book { Id = 3, Author = "Eusebiu3", Title = "C# LEARNING3", Year = new DateTime(2018, 01, 06) },
+                new Book { Id = 4, Author = "Eusebiu4", Title = "C# LEARNING4", Year = new DateTime(2018, 01, 07) }
             };
+
             return bookListMock;
         }
     }
