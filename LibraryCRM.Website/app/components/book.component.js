@@ -7,24 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
-var appRoutes = [];
-var AppModule = /** @class */ (function () {
-    function AppModule() {
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                router_1.RouterModule.forRoot(appRoutes)
-            ],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    AboutComponent.prototype.ngOnInit = function () {
+        throw new Error("Method not implemented.");
+    };
+    AboutComponent = __decorate([
+        core_1.Component({
+            selector: 'app-book',
+            templateUrl: './book.component.html',
+            styleUrls: ['./book.component.css']
         })
-    ], AppModule);
-    return AppModule;
+    ], AboutComponent);
+    return AboutComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.AboutComponent = AboutComponent;
+//# sourceMappingURL=book.component.js.map

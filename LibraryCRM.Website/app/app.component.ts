@@ -1,7 +1,21 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router'
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent  { name = 'Angular 5'; }
+
+export class AppComponent  {
+    currentUrl: string;
+
+    //Routing adress
+    constructor(private router: Router) {
+        this.router.events.subscribe((event) => {
+            if (event instanceof NavigationEnd) {
+                this.currentUrl = event.url;
+            }
+        })
+    }
+}
