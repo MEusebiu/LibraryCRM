@@ -7,17 +7,15 @@ import { BookService } from '../app/services/book.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
   constructor(private dataService: BookService) { }
 
+  title = "Las Vegas";
   books: any;
 
   ngOnInit() {
-    this.dataService.getBooks().subscribe((param) => (this.books = param));
+    this.dataService.getBooks().subscribe(val=> this.books=val);
   };
 }
 
-interface Book {
-  Author: string,
-  Title: string,
-  Year: Date;
-}
+
