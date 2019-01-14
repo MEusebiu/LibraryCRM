@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   books: any;
 
   ngOnInit() {
-    this.dataService.getBooks().subscribe(val=> this.books=val);
+    this.dataService.getBooks().subscribe(val => this.books=val);
   };
 }
 
