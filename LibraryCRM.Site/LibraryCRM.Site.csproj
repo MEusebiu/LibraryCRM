@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="Angular\e2e\protractor.conf.js" />
     <Content Include="Angular\src\app\app.component.html" />
+    <Content Include="Angular\src\app\components\book\book.component.html" />
     <Content Include="Angular\src\favicon.ico" />
     <Content Include="Angular\src\index.html" />
     <Content Include="Angular\src\karma.conf.js" />
@@ -97,6 +98,7 @@
     <Content Include="Angular\tsconfig.json" />
     <Content Include="Angular\tslint.json" />
     <Content Include="Angular\e2e\tsconfig.e2e.json" />
+    <Content Include="Angular\src\app\components\book\book.component.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -112,6 +114,8 @@
     <TypeScriptCompile Include="Angular\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="Angular\src\app\app.component.ts" />
     <TypeScriptCompile Include="Angular\src\app\app.module.ts" />
+    <TypeScriptCompile Include="Angular\src\app\components\book\book.component.spec.ts" />
+    <TypeScriptCompile Include="Angular\src\app\components\book\book.component.ts" />
     <TypeScriptCompile Include="Angular\src\app\services\book.service.spec.ts" />
     <TypeScriptCompile Include="Angular\src\app\services\book.service.ts" />
     <TypeScriptCompile Include="Angular\src\environments\environment.prod.ts" />

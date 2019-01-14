@@ -33,10 +33,10 @@ namespace LibraryCRM.API.Controllers
         {
             var bookListMock = new List<Book>
             {
-                new Book { Id = 1, Author = "Eusebiu1", Title = "C# LEARNING1", Year = new DateTime(2018, 01, 04) },
-                new Book { Id = 2, Author = "Eusebiu2", Title = "C# LEARNING2", Year = new DateTime(2018, 01, 05) },
-                new Book { Id = 3, Author = "Eusebiu3", Title = "C# LEARNING3", Year = new DateTime(2018, 01, 06) },
-                new Book { Id = 4, Author = "Eusebiu4", Title = "C# LEARNING4", Year = new DateTime(2018, 01, 07) }
+                new Book { Id = 1, Author = "Eusebiu1", Title = "C# LEARNING1", Year = 2018 },
+                new Book { Id = 2, Author = "Eusebiu2", Title = "C# LEARNING2", Year = 2018 },
+                new Book { Id = 3, Author = "Eusebiu3", Title = "C# LEARNING3", Year = 2018 },
+                new Book { Id = 4, Author = "Eusebiu4", Title = "C# LEARNING4", Year = 2018 }
             };
 
             return bookListMock;

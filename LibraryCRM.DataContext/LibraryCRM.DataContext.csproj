@@ -57,9 +57,9 @@
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserBook.cs" />
-    <Compile Include="Migrations\201901041816212_InitialMigration.cs" />
-    <Compile Include="Migrations\201901041816212_InitialMigration.Designer.cs">
-      <DependentUpon>201901041816212_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201901141125427_initial.cs" />
+    <Compile Include="Migrations\201901141125427_initial.Designer.cs">
+      <DependentUpon>201901141125427_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,10 +68,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201901041816212_InitialMigration.resx">
-      <DependentUpon>201901041816212_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901141125427_initial.resx">
+      <DependentUpon>201901141125427_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

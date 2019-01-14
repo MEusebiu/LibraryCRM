@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row" *ngFor="let book of books">
+    <div class="book-columns col-md-4">
+      <div class="book-labels">Title</div>
+      <label>{{book.title}}</label>
+    </div>
+    <div class="book-columns col-md-4">
+      <div class="book-labels">Author</div>
+      <label>{{book.author}}</label>
+    </div>
+    <div class="book-columns col-md-4">
+      <div class="book-labels">Release</div>
+      <label>{{book.year}}</label>
+    </div>
+  </div>
+</div>

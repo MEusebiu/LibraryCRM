@@ -8,10 +8,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 import { AlertModule } from 'ngx-bootstrap';
 
+//My components
+import { BookComponent } from './components/book/book.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
