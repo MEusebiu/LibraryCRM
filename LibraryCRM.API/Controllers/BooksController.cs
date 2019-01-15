@@ -18,13 +18,12 @@ namespace LibraryCRM.API.Controllers
         private LibraryDbContext db = new LibraryDbContext();
 
         // GET: api/Books
-        public IQueryable<Book> GetBooks()
+        public IList<Book> GetBooks()
         {
-            return db.Books;
+            return db.Books.ToList();
         }
 
         // GET: api/Books/5
-        [ResponseType(typeof(Book))]
         public IHttpActionResult GetBook(int id)
         {
             Book book = db.Books.Find(id);

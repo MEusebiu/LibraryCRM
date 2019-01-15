@@ -1,16 +1,26 @@
 <div class="container">
-  <div class="row" *ngFor="let book of books">
-    <div class="book-columns col-md-4">
-      <div class="book-labels">Title</div>
-      <label>{{book.title}}</label>
+  <div class="header-title"> Books </div>
+
+  <div class="book-end" *ngFor="let book of books">
+    <div class="">
+      <label class="book-title">{{book.title}}</label>
     </div>
-    <div class="book-columns col-md-4">
-      <div class="book-labels">Author</div>
-      <label>{{book.author}}</label>
+    <div class="">
+      <label>Description: {{book.description}}</label>
     </div>
-    <div class="book-columns col-md-4">
-      <div class="book-labels">Release</div>
-      <label>{{book.year}}</label>
+    <div class="row">
+      <div class="book-columns col-md-4">
+        <span>Author:</span>
+        <label class="italic-font"> {{book.author.firstName}} {{book.author.lastName}}</label>
+      </div>
+      <div class="book-columns col-md-4">
+        <span>Genre:</span>
+        <label class="italic-font"> {{book.genre.name}}</label>
+      </div>
+      <div class="book-columns col-md-4">
+        <span>Release:</span>
+        <label class="italic-font"> {{book.year}}</label>
+      </div>
     </div>
   </div>
 </div>

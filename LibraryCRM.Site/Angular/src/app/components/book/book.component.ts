@@ -13,6 +13,8 @@ export class BookComponent implements OnInit {
   books: any;
 
   ngOnInit() {
+    console.log("Books Console Log");
+    this.dataService.getBooks().subscribe(val => console.log(val));
     this.dataService.getBooks().subscribe(val => this.books = val);
   }
 }

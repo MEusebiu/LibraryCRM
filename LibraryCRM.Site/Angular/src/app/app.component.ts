@@ -8,13 +8,10 @@ import { BookService } from '../app/services/book.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private dataService: BookService) { }
-
-  title = "Las Vegas";
-  books: any;
+  constructor() { }
 
   ngOnInit() {
-    this.dataService.getBooks().subscribe(val => this.books=val);
+   
   };
 }
 

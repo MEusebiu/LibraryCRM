@@ -29,8 +29,9 @@ namespace LibraryCRM.API
             // Set JSON formatter as default one and remove XmlFormatter
             var jsonFormatter = config.Formatters.JsonFormatter;
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
             jsonFormatter.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
         }
     }
 }
