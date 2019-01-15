@@ -1,18 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { BookService } from '../app/services/book.service';
+import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
 
-  constructor() { }
+  currentUrl: string;
 
-  ngOnInit() {
-   
-  };
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
+      }
+    })
+  }
+
 }
 
 

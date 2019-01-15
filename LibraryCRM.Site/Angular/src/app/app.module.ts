@@ -11,13 +11,18 @@ import { AlertModule } from 'ngx-bootstrap';
 //My components
 import { BookComponent } from './components/book/book.component';
 import { AuthorComponent } from './components/author/author.component';
+import { HomeComponent } from './components/home/home.component';
 
+//My services
+import { AuthorService } from './services/author.service';
+import { BookService } from './services/book.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
-    AuthorComponent
+    AuthorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,7 @@ import { AuthorComponent } from './components/author/author.component';
     HttpClientModule,
     AlertModule.forRoot()
   ],
-  providers: [],
+  providers: [BookService, AuthorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
