@@ -1,7 +1,10 @@
 <div class="container">
-  <div *ngFor="let author of authors">
-    <ul>
-      <li>{{author.firstName}} {{author.lastName}}</li>
-    </ul>
+  <img class="page-top-cover" src="../../../assets/img/top-authors.jpg" />
+  <div class="site-content">
+    <div *ngFor="let author of authors">
+      <ul>
+        <li>{{author.firstName}} {{author.lastName}}</li>
+      </ul>
+    </div>
   </div>
 </div>

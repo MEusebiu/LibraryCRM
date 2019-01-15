@@ -73,7 +73,12 @@
     <Content Include="Angular\src\app\app.component.html" />
     <Content Include="Angular\src\app\components\author\author.component.html" />
     <Content Include="Angular\src\app\components\book\book.component.html" />
+    <Content Include="Angular\src\app\components\home\home.component.html" />
+    <Content Include="Angular\src\assets\img\authors-faces.jpg" />
+    <Content Include="Angular\src\assets\img\books-shelf.jpg" />
+    <Content Include="Angular\src\assets\img\home-background.jpg" />
     <Content Include="Angular\src\assets\img\librarycrm-logo.png" />
+    <Content Include="Angular\src\assets\img\top-authors.jpg" />
     <Content Include="Angular\src\favicon.ico" />
     <Content Include="Angular\src\index.html" />
     <Content Include="Angular\src\karma.conf.js" />
@@ -102,6 +107,7 @@
     <Content Include="Angular\e2e\tsconfig.e2e.json" />
     <Content Include="Angular\src\app\components\book\book.component.scss" />
     <Content Include="Angular\src\app\components\author\author.component.scss" />
+    <Content Include="Angular\src\app\components\home\home.component.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -121,6 +127,8 @@
     <TypeScriptCompile Include="Angular\src\app\components\author\author.component.ts" />
     <TypeScriptCompile Include="Angular\src\app\components\book\book.component.spec.ts" />
     <TypeScriptCompile Include="Angular\src\app\components\book\book.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\components\home\home.component.spec.ts" />
+    <TypeScriptCompile Include="Angular\src\app\components\home\home.component.ts" />
     <TypeScriptCompile Include="Angular\src\app\services\author.service.spec.ts" />
     <TypeScriptCompile Include="Angular\src\app\services\author.service.ts" />
     <TypeScriptCompile Include="Angular\src\app\services\book.service.spec.ts" />
