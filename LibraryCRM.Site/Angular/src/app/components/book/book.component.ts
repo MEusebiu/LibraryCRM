@@ -8,13 +8,13 @@ import { BookService } from '../../services/book.service';
 })
 export class BookComponent implements OnInit {
 
-  constructor(private dataService: BookService) { }
+  constructor(private bookService: BookService) { }
 
   books: any;
 
   ngOnInit() {
     console.log("Books Console Log");
-    this.dataService.getBooks().subscribe(val => console.log(val));
-    this.dataService.getBooks().subscribe(val => this.books = val);
+    this.bookService.getBooks().subscribe(val => console.log(val));
+    this.bookService.getBooks().subscribe(val => this.books = val);
   }
 }

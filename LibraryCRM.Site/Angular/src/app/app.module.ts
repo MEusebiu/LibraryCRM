@@ -10,12 +10,14 @@ import { AlertModule } from 'ngx-bootstrap';
 
 //My components
 import { BookComponent } from './components/book/book.component';
+import { AuthorComponent } from './components/author/author.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponent
+    BookComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,
