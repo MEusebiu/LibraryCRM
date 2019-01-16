@@ -1,0 +1,25 @@
+<div class="container">
+  <img class="page-top-cover" src="../../../assets/img/books-shelf.jpg" />
+  <div class="row site-content">
+    <div class="book-end col-md-6" *ngFor="let book of books">
+      <div class="">
+        <label class="book-title">{{book.title}}</label>
+      </div>
+      <div class="">
+        <span>Author:</span>
+        <label class="italic-font"> {{book.author.firstName}} {{book.author.lastName}}</label>
+      </div>
+      <div class="">
+        <span>Genre:</span>
+        <label class="italic-font"> {{book.genre.name}}</label>
+      </div>
+      <div class="">
+        <span>Released:</span>
+        <label class="italic-font"> {{book.year}}</label>
+      </div>
+      <div class="">
+        <label>Description: {{book.description}}</label>
+      </div>
+    </div>
+  </div>
+</div>

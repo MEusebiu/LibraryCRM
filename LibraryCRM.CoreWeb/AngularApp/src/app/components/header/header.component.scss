@@ -1,0 +1,49 @@
+
+ul {
+  height: 50px;
+}
+
+ul li {
+  padding: 17px 20px;
+  font-size: 18px;
+  float: left;
+}
+
+li a {
+  color: black;
+}
+
+.tabs-menu {
+  text-align: center;
+}
+
+.search-bar {
+  padding: 17px 20px;
+}
+
+.search-inside {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.library-logo {
+  width: 50px;
+}
+
+.logo-text {
+  font-size: 27px;
+  font-weight: 600;
+  color: #0c69ad;
+  position: relative;
+  top: 7px;
+}
+
+.active {
+  color: #0c69ad !important;
+  font-weight: 600;
+}
+
+.top-menu {
+  margin: 15px 0;
+  padding: 0 20px;
+}

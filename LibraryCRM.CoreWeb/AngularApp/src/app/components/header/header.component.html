@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row top-menu">
+    <div class="logo col-md-3">
+      <img class="library-logo" src="../assets/img/librarycrm-logo.png" />
+      <span class="logo-text"> UniLibrary</span>
+    </div>
+
+    <ul class="tabs-menu col-md-6">
+      <li>
+        <a routerLink="">Home</a>
+      </li>
+      <li>
+        <a routerLink="/book" [class.active]="currentUrl == '/book'">Books</a>
+      </li>
+      <li>
+        <a routerLink="/author" [class.active]="currentUrl == '/author'">Authors</a>
+      </li>
+      <li>
+        <a routerLink="">Genres</a>
+      </li>
+      <li>
+        <a routerLink="">Library</a>
+      </li>
+    </ul>
+
+    <div class="search-bar col-md-3">
+      <input class="search-inside" placeholder="Search" />
+    </div>
+  </div>
+</div>
