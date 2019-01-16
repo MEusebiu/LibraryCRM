@@ -57,12 +57,21 @@
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserBook.cs" />
+    <Compile Include="Migrations\201901161324456_OneOfThem.cs" />
+    <Compile Include="Migrations\201901161324456_OneOfThem.Designer.cs">
+      <DependentUpon>201901161324456_OneOfThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901161324456_OneOfThem.resx">
+      <DependentUpon>201901161324456_OneOfThem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
