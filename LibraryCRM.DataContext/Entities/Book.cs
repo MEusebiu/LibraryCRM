@@ -8,7 +8,7 @@ namespace LibraryCRM.DataContext.Entities
     { 
         public string Title { get; set; }
         public string Description { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public int Year { get; set; }
        
       
         public int GenreId { get; set; }

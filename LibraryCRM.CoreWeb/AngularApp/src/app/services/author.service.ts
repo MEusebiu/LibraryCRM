@@ -9,6 +9,6 @@ export class AuthorService {
   constructor(private http: HttpClient) { }
 
   getAuthors() {
-    return this.http.get('http://localhost:8080/api/author');
+    return this.http.get('http://localhost:52665/api/author');
   }
 }

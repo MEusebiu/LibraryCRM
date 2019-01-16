@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace LibraryCRM.API
 {
@@ -19,6 +21,21 @@ namespace LibraryCRM.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //WebAPI - http://localhost:52665/
+            //Angular - https://localhost:44309/
+
+            // Enable CORS for the Angular App
+            var cors = new EnableCorsAttribute("https://localhost:44309/", "*", "*");
+            config.EnableCors(cors);
+
+            // Set JSON formatter as default one and remove XmlFormatter
+            var jsonFormatter = config.Formatters.JsonFormatter;
+            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            jsonFormatter.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
+
         }
     }
 }
