@@ -22,9 +22,6 @@ namespace LibraryCRM.API
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            //WebAPI - http://localhost:52665/
-            //Angular - https://localhost:44309/
-
             // Enable CORS for the Angular App
             var cors = new EnableCorsAttribute("https://localhost:44309/", "*", "*");
             config.EnableCors(cors);

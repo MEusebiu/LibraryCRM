@@ -7,12 +7,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using LibraryCRM.DataContext.DbContext;
 using LibraryCRM.DataContext.Entities;
 
 namespace LibraryCRM.API.Controllers
 {
+    [EnableCors(origins:"*", headers:"*", methods:"*")]
     public class BookController : ApiController
     {
         private LibraryDbContext db = new LibraryDbContext();
