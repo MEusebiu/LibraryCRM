@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'; 
 
 //My components
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 import { BookComponent } from './components/book/book.component';
 import { AuthorComponent } from './components/author/author.component';
-import { HomeComponent } from './components/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 //My services
 import { AuthorService } from './services/author.service';
 import { BookService } from './services/book.service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { BookService } from './services/book.service';
     BookComponent,
     AuthorComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
