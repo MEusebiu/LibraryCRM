@@ -132,6 +132,10 @@
       <Project>{43c7cf54-1ea5-4d8c-bf6b-23c4e6f4b5c6}</Project>
       <Name>LibraryCRM.DataContext</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LibraryCRM.Repository\LibraryCRM.Repository.csproj">
+      <Project>{9e1c68d3-05a0-4785-a234-1cee86ba69ae}</Project>
+      <Name>LibraryCRM.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
