@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi, Version=4.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.WebApi2.4.2.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -131,6 +137,10 @@
     <ProjectReference Include="..\LibraryCRM.DataContext\LibraryCRM.DataContext.csproj">
       <Project>{43c7cf54-1ea5-4d8c-bf6b-23c4e6f4b5c6}</Project>
       <Name>LibraryCRM.DataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibraryCRM.Repository\LibraryCRM.Repository.csproj">
+      <Project>{9e1c68d3-05a0-4785-a234-1cee86ba69ae}</Project>
+      <Name>LibraryCRM.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

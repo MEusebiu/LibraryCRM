@@ -11,6 +11,7 @@ using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using LibraryCRM.DataContext.DbContext;
 using LibraryCRM.DataContext.Entities;
+using LibraryCRM.Repository.Repository;
 
 namespace LibraryCRM.API.Controllers
 {
@@ -19,10 +20,18 @@ namespace LibraryCRM.API.Controllers
     {
         private LibraryDbContext db = new LibraryDbContext();
 
+        protected IBookRepository _bookRepository;
+
+        public BookController(IBookRepository bookRepository)
+        {
+            _bookRepository = bookRepository;
+        }
+
         // GET: api/Book
         public IList<Book> GetBooks()
         {
-            return db.Books.ToList();
+            return _bookRepository.GetAll().ToList();
+            //return db.Books.ToList();
         }
 
         // GET: api/Book/5
