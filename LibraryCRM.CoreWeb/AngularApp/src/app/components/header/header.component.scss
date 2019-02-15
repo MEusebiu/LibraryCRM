@@ -13,12 +13,17 @@ li a {
   color: black;
 }
 
+li a:hover {
+  color: #0c69ad !important; 
+}
+
 .tabs-menu {
   text-align: center;
 }
 
 .search-bar {
   padding: 17px 20px;
+  font-weight: 600;
 }
 
 .search-inside {

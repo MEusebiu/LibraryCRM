@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 //My services
 import { AuthorService } from './services/author.service';
 import { BookService } from './services/book.service';
+import { CrudmenuComponent } from './components/crudmenu/crudmenu.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { BookService } from './services/book.service';
     AuthorComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CrudmenuComponent
   ],
   imports: [
     BrowserModule,

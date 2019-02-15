@@ -1,0 +1,14 @@
+ul{float:right;}
+
+ul li{
+  float:left;
+  margin:0 10px;
+}
+
+ul li a {
+  padding: 5px 30px;
+  border: 1px solid #8e9eab;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right,#8e9eab, #eef2f3);
+  color: black;
+}
