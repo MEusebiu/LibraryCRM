@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
+using LibraryCRM.DataContext.DbContext;
 using LibraryCRM.Repository.Repository;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,8 @@ namespace LibraryCRM.API
             // Register your Web API controllers.
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
-            builder.RegisterType<BookRepository>().As<IBookRepository>();
+            builder.RegisterType<BookRepository>().As<IBookRepository>().SingleInstance();
+            builder.RegisterType<LibraryDbContext>().As<LibraryDbContext>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

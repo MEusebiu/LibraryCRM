@@ -5,7 +5,7 @@ namespace LibraryCRM.DataContext.DbContext
 {
     public class LibraryDbContext : System.Data.Entity.DbContext
     {
-        public LibraryDbContext() : base("UniLibrary") { }
+        public LibraryDbContext() : base("name=UniLibrary") { }
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }

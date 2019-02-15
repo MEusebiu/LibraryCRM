@@ -31,8 +31,6 @@ namespace LibraryCRM.API
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             jsonFormatter.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
             config.Formatters.Remove(config.Formatters.XmlFormatter);
-
-
         }
     }
 }
